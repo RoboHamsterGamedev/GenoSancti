@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3393932738498679858
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2401971020820745873, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_Name
+      value: Invader_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745874, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6193684897025349697, guid: 92fa3492af2f617438f6a5c8c22a5499, type: 3}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.0672944
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.4321017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.4137
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.7883
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745875, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745885, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401971020820745885, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693044622940040767, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: animationSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693044622940040767, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: animationSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -6193684897025349697, guid: 92fa3492af2f617438f6a5c8c22a5499, type: 3}
+    - target: {fileID: 5693044622940040767, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
+      propertyPath: animationSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -6193684897025349697, guid: 92fa3492af2f617438f6a5c8c22a5499, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}

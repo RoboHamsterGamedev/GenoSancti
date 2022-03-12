@@ -11,6 +11,7 @@ public class Projectile : MonoBehaviour
     private void Awake()
     {
         collider = GetComponent<BoxCollider2D>();
+        Destroy(this, 2f);
     }
 
     private void OnDestroy()

@@ -38,7 +38,7 @@ public class Invaders : MonoBehaviour
             for (int j = 0; j < columns; j++)
             {
                 // Create an invader and parent it to this transform
-                Invader invader = Instantiate(prefabs[i], transform);
+                Invader invader = Instantiate(prefabs[i], transform);  
                 invader.killed += OnInvaderKilled;
 
                 // Calculate and set the position of the invader in the row
