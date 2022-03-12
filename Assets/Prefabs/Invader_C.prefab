@@ -60,12 +60,36 @@ PrefabInstance:
       value: Invader_C
       objectReference: {fileID: 0}
     - target: {fileID: 1030242613548407471, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2825966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030242613548407471, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2712884
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030242613548407471, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.015504628
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030242613548407471, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.03365171
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030242613548407471, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.608
       objectReference: {fileID: 0}
     - target: {fileID: 1030242613548407471, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.4994439
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924401198334327309, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
+      propertyPath: life
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924401198334327309, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
+      propertyPath: score
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6924401198334327309, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
       propertyPath: animationSprites.Array.data[0]

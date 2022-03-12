@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4447578080803963419}
   - component: {fileID: 8922502034929116585}
   - component: {fileID: 1551307908973724939}
+  - component: {fileID: 3361390196588974558}
   m_Layer: 7
   m_Name: Invader_Base
   m_TagString: Untagged
@@ -147,3 +148,23 @@ MonoBehaviour:
   animationSprites: []
   animationTime: 1
   score: 10
+  life: 1
+--- !u!95 &3361390196588974558
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8922502034929116581}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e35904e2dc79b745a5aadd93249d279, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -8,12 +8,15 @@ public class Invader : MonoBehaviour
     public float animationTime = 1f;
     public int animationFrame { get; private set; }
     public int score = 10;
+    public int life = 1;
     public System.Action<Invader> killed;
+    Animator animator;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = animationSprites[0];
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -36,8 +39,20 @@ public class Invader : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Laser")) {
-            killed?.Invoke(this);
+            Damage();
+
         }
     }
 
+    void Damage()
+    {
+        life--;
+        animator.SetTrigger("damage");
+        if (life <= 0) Death();
+       
+    }
+    private void Death()
+    {
+        killed?.Invoke(this);
+    }
 }

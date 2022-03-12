@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public sealed class GameManager : MonoBehaviour
 {
@@ -104,10 +105,13 @@ public sealed class GameManager : MonoBehaviour
         SetScore(score + invader.score);
 
         if (invaders.AmountKilled == invaders.TotalAmount) {
-            NewRound();
+            NextRound();
         }
     }
-
+    void NextRound()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
     private void OnMysteryShipKilled(MysteryShip mysteryShip)
     {
         SetScore(score + mysteryShip.score);
