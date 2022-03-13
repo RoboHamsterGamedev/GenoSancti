@@ -4,6 +4,7 @@ public class Invaders : MonoBehaviour
 {
     [Header("Invaders")]
     public Invader[] prefabs = new Invader[5];
+    public GameObject handSet = null; 
     public AnimationCurve speed = new AnimationCurve();
     public Vector3 direction { get; private set; } = Vector3.right;
     public Vector3 initialPosition { get; private set; }
@@ -11,7 +12,7 @@ public class Invaders : MonoBehaviour
 
     public int AmountKilled { get; private set; }
     public int AmountAlive => TotalAmount - AmountKilled;
-    public int TotalAmount => rows * columns;
+    public int TotalAmount;
     public float PercentKilled => (float)AmountKilled / (float)TotalAmount;
 
     [Header("Grid")]
@@ -25,28 +26,10 @@ public class Invaders : MonoBehaviour
     private void Awake()
     {
         initialPosition = transform.position;
+        SetInvadersGrid();
+        CollectHandsets();
+        
 
-        // Form the grid of invaders
-        for (int i = 0; i < rows; i++)
-        {
-            float width = 2f * (columns - 1);
-            float height = 2f * (rows - 1);
-
-            Vector2 centerOffset = new Vector2(-width * 0.5f, -height * 0.5f);
-            Vector3 rowPosition = new Vector3(centerOffset.x, (2f * i) + centerOffset.y, 0f);
-
-            for (int j = 0; j < columns; j++)
-            {
-                // Create an invader and parent it to this transform
-                Invader invader = Instantiate(prefabs[i], transform);  
-                invader.killed += OnInvaderKilled;
-
-                // Calculate and set the position of the invader in the row
-                Vector3 position = rowPosition;
-                position.x += 2f * j;
-                invader.transform.localPosition = position;
-            }
-        }
     }
 
     private void Start()
@@ -82,21 +65,60 @@ public class Invaders : MonoBehaviour
 
     private void Update()
     {
-        // Evaluate the speed of the invaders based on how many have been killed
+        
+        EvaluateSpeed();
+        CheckifReachEdge();
+    }
+
+    
+   
+    void SetInvadersGrid()
+    {
+        for (int i = 0; i < rows; i++)
+        {
+            float width = 2f * (columns - 1);
+            float height = 2f * (rows - 1);
+
+            Vector2 centerOffset = new Vector2(-width * 0.5f, -height * 0.5f);
+            Vector3 rowPosition = new Vector3(centerOffset.x, (2f * i) + centerOffset.y, 0f);
+
+            for (int j = 0; j < columns; j++)
+            {
+                // Create an invader and parent it to this transform
+                Invader invader = Instantiate(prefabs[i], transform);
+                invader.killed += OnInvaderKilled;
+
+                // Calculate and set the position of the invader in the row
+                Vector3 position = rowPosition;
+                position.x += 2f * j;
+                invader.transform.localPosition = position;
+            }
+        }
+    }
+    void CollectHandsets()
+    {
+        Invader[] invaders = handSet.GetComponentsInChildren<Invader>();
+        foreach (var invader in invaders)
+        {
+            invader.killed += OnInvaderKilled;
+        }
+        TotalAmount = (rows * columns) + invaders.Length;
+        Debug.Log(TotalAmount);
+    }
+    void EvaluateSpeed()// Evaluate the speed of the invaders based on how many have been killed
+    {
         float speed = this.speed.Evaluate(PercentKilled);
         transform.position += direction * speed * Time.deltaTime;
-
-        // Transform the viewport to world coordinates so we can check when the
-        // invaders reach the edge of the screen
+    }
+    void CheckifReachEdge()
+    {
         Vector3 leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
         Vector3 rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
-
-        // The invaders will advance to the next row after reaching the edge of
-        // the screen
         foreach (Transform invader in transform)
         {
             // Skip any invaders that have been killed
-            if (!invader.gameObject.activeInHierarchy) {
+            if (!invader.gameObject.activeInHierarchy)
+            {
                 continue;
             }
 
@@ -113,7 +135,6 @@ public class Invaders : MonoBehaviour
             }
         }
     }
-
     private void AdvanceRow()
     {
         // Flip the direction the invaders are moving

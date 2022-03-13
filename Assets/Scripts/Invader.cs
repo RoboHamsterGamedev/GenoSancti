@@ -14,9 +14,8 @@ public class Invader : MonoBehaviour
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = animationSprites[0];
-        animator = GetComponent<Animator>();
+        SetAnimation();
+
     }
 
     private void Start()
@@ -24,7 +23,13 @@ public class Invader : MonoBehaviour
         InvokeRepeating(nameof(AnimateSprite), animationTime, animationTime);
     }
 
-    private void AnimateSprite()
+    protected void SetAnimation()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = animationSprites[0];
+        animator = GetComponent<Animator>();
+    }
+    protected void AnimateSprite()
     {
         animationFrame++;
 
@@ -36,7 +41,7 @@ public class Invader : MonoBehaviour
         spriteRenderer.sprite = animationSprites[animationFrame];
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    protected void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Laser")) {
             Damage();
@@ -44,14 +49,14 @@ public class Invader : MonoBehaviour
         }
     }
 
-    void Damage()
+    protected void Damage()
     {
         life--;
         animator.SetTrigger("damage");
         if (life <= 0) Death();
        
     }
-    private void Death()
+    protected void Death()
     {
         killed?.Invoke(this);
     }

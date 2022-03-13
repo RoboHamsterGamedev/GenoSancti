@@ -93,11 +93,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693044622940040767, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
       propertyPath: life
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5693044622940040767, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
       propertyPath: score
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5693044622940040767, guid: 7bd1df7f7cb7d534da5ddb87529c92f3, type: 3}
       propertyPath: animationSprites.Array.size

@@ -85,11 +85,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6924401198334327309, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
       propertyPath: life
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6924401198334327309, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
       propertyPath: score
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6924401198334327309, guid: 3a7c7d18f08dfbd4f929513a0647c815, type: 3}
       propertyPath: animationSprites.Array.data[0]
