@@ -62,26 +62,26 @@ PrefabInstance:
     - target: {fileID: 3837662384487455585, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -3999838944180381677, guid: a6cf475d336c3f946af1f0eae7345997, type: 3}
+      objectReference: {fileID: -513590313336307935, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
     - target: {fileID: 3837662384487455586, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}
       propertyPath: m_Name
       value: Invader_D
       objectReference: {fileID: 0}
     - target: {fileID: 3837662384487455598, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.607
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 3837662384487455598, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.5084466
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 6563538622560385996, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}
       propertyPath: animationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: -3999838944180381677, guid: a6cf475d336c3f946af1f0eae7345997, type: 3}
+      objectReference: {fileID: -513590313336307935, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
     - target: {fileID: 6563538622560385996, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}
       propertyPath: animationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -6527306143393602814, guid: b2420175ab9e8524dab6453b5adae099, type: 3}
+      objectReference: {fileID: 5769956724132029914, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a39a5514494fb8c43b7a4954a8765c69, type: 3}

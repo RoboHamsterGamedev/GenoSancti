@@ -38,7 +38,7 @@ PrefabInstance:
     - target: {fileID: 8922502034929116582, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -334440703076467439, guid: 34fe5d14f8756164ca825d6a92cd0616, type: 3}
+      objectReference: {fileID: 8527111519951476930, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
     - target: {fileID: 8922502034929116582, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -49,7 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8922502034929116583, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.1420588
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922502034929116583, guid: 984c31f2f1206774085587cae40258e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8922502034929116583, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92,6 +96,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8922502034929116585, guid: 984c31f2f1206774085587cae40258e2, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922502034929116585, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 1.941
       objectReference: {fileID: 0}
@@ -101,11 +109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8922502034929116585, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.941
+      value: 1.52
       objectReference: {fileID: 0}
     - target: {fileID: 8922502034929116585, guid: 984c31f2f1206774085587cae40258e2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.3903503
+      value: 1.825
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1551307908973724939, guid: 984c31f2f1206774085587cae40258e2, type: 3}
@@ -128,9 +136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSprites:
-  - {fileID: -334440703076467439, guid: 34fe5d14f8756164ca825d6a92cd0616, type: 3}
-  - {fileID: -334440703076467439, guid: 34fe5d14f8756164ca825d6a92cd0616, type: 3}
+  - {fileID: 8527111519951476930, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
+  - {fileID: 8527111519951476930, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
   animationTime: 1
   score: 10
   life: 1
   missilePrefab: {fileID: 4727784088411386253, guid: 7652b0d248c098a4c8216abdd8ebcb68, type: 3}
+  rotation: 0

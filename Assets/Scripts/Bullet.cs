@@ -5,11 +5,11 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     float speed = 20f;
-    public BoxCollider2D collider { get; private set; }
+    public BoxCollider2D boxCollider { get; private set; }
     void Start()
     {
        
-        collider = GetComponent<BoxCollider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
         Destroy(this.gameObject, 2f);
     }
     private void Update()
@@ -25,10 +25,11 @@ public class Bullet : MonoBehaviour
     {
         Bunker bunker = other.gameObject.GetComponent<Bunker>();
 
-        if (bunker == null || bunker.CheckCollision(collider, transform.position) || other.tag== "Boundary")
+        if (bunker == null || bunker.CheckCollision(boxCollider, transform.position) || other.tag== "Boundary")
         {
             Destroy(gameObject);
         }
+       // if (other.tag == "Boundary") Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

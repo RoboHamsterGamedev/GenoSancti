@@ -33,6 +33,7 @@ public class Projectile : MonoBehaviour
         if (bunker == null || bunker.CheckCollision(collider, transform.position)) {
             Destroy(gameObject);
         }
+       //if (other.tag =="Boundary") Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

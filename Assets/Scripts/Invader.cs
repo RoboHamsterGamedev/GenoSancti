@@ -45,7 +45,6 @@ public class Invader : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Laser")) {
             Damage();
-
         }
     }
 

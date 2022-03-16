@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         {
             laserActive = true;
 
-            Projectile laser = Instantiate(laserPrefab, transform.position, Quaternion.identity);
+            Projectile laser = Instantiate(laserPrefab, this.transform.position, Quaternion.identity);
             laser.destroyed += OnLaserDestroyed;
         }
     }
