@@ -25,7 +25,7 @@ public class Invader_BigBoss : Invader
 
     private void OnDisable()
     {
-        CancelInvoke();
+        CancelInvoke("Attack");
     }
 
 }

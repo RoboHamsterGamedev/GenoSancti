@@ -9,9 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 73783117e2c66274caffbb6372763c25
   - enabled: 1
-    path: Assets/Scenes/Space Invaders.unity
+    path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/TestNextScene.unity
-    guid: 838d3657276e26847bb074d73a31f0e3
+    path: Assets/Scenes/Level2.unity
+    guid: cf0659fdf9006cd42b952127831e7a82
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: c0e710069264e25478d8e34bcb6a2ddf
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 89a962090a1e59b48a329c4d265d8408
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: d113d54981be594488b4929d75258953
   m_configObjects: {}

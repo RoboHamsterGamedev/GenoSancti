@@ -28,8 +28,6 @@ public class Invaders : MonoBehaviour
         initialPosition = transform.position;
         SetInvadersGrid();
         CollectHandsets();
-        
-
     }
 
     private void Start()

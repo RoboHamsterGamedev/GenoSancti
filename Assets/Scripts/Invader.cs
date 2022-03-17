@@ -15,7 +15,6 @@ public class Invader : MonoBehaviour
     private void Awake()
     {
         SetAnimation();
-
     }
 
     private void Start()
@@ -45,6 +44,14 @@ public class Invader : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Laser")) {
             Damage();
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("EndScreen"))
+        {
+            var player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                Debug.Log("EndScreen");
+                player.GetComponent<Player>().PlayerDeath(); }
         }
     }
 

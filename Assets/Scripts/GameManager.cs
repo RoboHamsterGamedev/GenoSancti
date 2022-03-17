@@ -10,8 +10,12 @@ public sealed class GameManager : MonoBehaviour
     private Bunker[] bunkers;
 
     public GameObject gameOverUI;
+    public GameObject winScreen;
     public Text scoreText;
     public Text livesText;
+    int lastScene = 5;
+
+
 
     public int score { get; private set; }
     public int lives { get; private set; }
@@ -110,7 +114,13 @@ public sealed class GameManager : MonoBehaviour
     }
     void NextRound()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        var currentSceneInd = SceneManager.GetActiveScene().buildIndex;
+        if (currentSceneInd != lastScene)
+        { SceneManager.LoadScene(currentSceneInd + 1); }
+        else
+        {
+            winScreen.SetActive(true);
+        }
     }
     private void OnMysteryShipKilled(MysteryShip mysteryShip)
     {

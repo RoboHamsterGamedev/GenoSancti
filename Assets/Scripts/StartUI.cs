@@ -20,5 +20,10 @@ public class StartUI : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    
+
+    public void Level(int level)
+    {
+        SceneManager.LoadScene(level);
+    }
+
 }

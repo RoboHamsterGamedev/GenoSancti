@@ -20,6 +20,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5399601884874693798, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
     - target: {fileID: 6046842790036587670, guid: 213b5dac25b64614ea57bf2f73d94aef, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046842790036587670, guid: 213b5dac25b64614ea57bf2f73d94aef, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.48
       objectReference: {fileID: 0}
@@ -85,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 2091829175261615561, guid: 5222984bcfd2e144e909cd338e27a3f9, type: 3}
     - target: {fileID: 6046842790036587674, guid: 213b5dac25b64614ea57bf2f73d94aef, type: 3}
       propertyPath: m_Name
-      value: Invader_Base
+      value: Invader_Base Variant 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 213b5dac25b64614ea57bf2f73d94aef, type: 3}
