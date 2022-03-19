@@ -766,6 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 2141491717}
+  winScreen: {fileID: 0}
   scoreText: {fileID: 1984502043}
   livesText: {fileID: 188796889}
 --- !u!1 &256910234
@@ -2140,8 +2141,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.008342743
-      value: 1.9875183
+      time: 0.0017433167
+      value: 1.8887634
       inSlope: 2.2044609
       outSlope: 2.2044609
       tangentMode: 0

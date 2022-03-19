@@ -26,12 +26,13 @@ public class Invaders : MonoBehaviour
     private void Awake()
     {
         initialPosition = transform.position;
-        SetInvadersGrid();
-        CollectHandsets();
     }
 
     private void Start()
     {
+        
+        SetInvadersGrid();
+        CollectHandsets();
         InvokeRepeating(nameof(MissileAttack), missileSpawnRate, missileSpawnRate);
     }
 

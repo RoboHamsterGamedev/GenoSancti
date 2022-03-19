@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     void Awake()
     {
 
-        if (instance != null)
+        /*if (instance != null)
         {
             if (instance != this) { Destroy(this.gameObject); }
         }
@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
         {
             instance = this.transform.GetComponent<AudioManager>(); ;
             DontDestroyOnLoad(this);
-        }
+        }*/
         
         sourceMain = this.transform.GetComponent<AudioSource>();
         sourceMain.clip = mainMusic;
